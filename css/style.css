@@ -1,0 +1,61 @@
+/*limited reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}	
+/*Nav bar*/
+header nav ul li{
+	display: inline-block;
+}
+header nav ul li a{
+	display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1.5em;
+
+}
+header nav{
+	border-style: solid;
+	border-width: 2px;
+	background-color: #000;
+	text-align: right;
+}
+/*Header*/
+.ftop{
+  height: 484px;
+  position: relative;
+  border-width: 2px;
+  border-style: solid;
+}
+header figure div#background{
+	background-image: url("../images/back.jpg");
+  	width: 100%;
+  	height: 100%;
+  	position: absolute;
+  	top: 1px;
+  	border-style: solid;
+  	border-width: 2px;
+}
+.headerContent{
+  position: relative;
+  margin: 0 auto ;
+  top: 36%;
+}
+header figure div#headerContent h1,p{
+	text-align: center;
+	color: #fff;
+	font-family: 'VT323', monospace;
+} 
+
+/*Me*/
+main{
+	position: relative;
+}
+/*About me*/
+/*Hobbies*/
+/*Day video*/
+/*footer*/
