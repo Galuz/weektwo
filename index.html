@@ -7,68 +7,136 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!--my style-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
 <body>
 <header>
-	<nav>
-		<ul>
-			<li><a href="">Me</a></li>
-			<li><a href="">About me</a></li>
-			<li><a href="">Hobbies</a></li>
-			<li><a href="">Video of the day</a></li>
-			<li><a href="">Contact me </a></li>
-		</ul>
-	</nav>
+	<nav class="navbar  navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        </button>
+			        <a class="navbar-brand page-scroll" href="#header">Galuz Gonzalez</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html#">Me</a></li>
+						<li><a href="index.html#">About me</a></li>
+						<li><a href="index.html#">Hobbies</a></li>
+						<li><a href="index.html#">Play List</a></li>
+						<li><a href="index.html#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	<figure class="ftop">
 		<div id="background"></div>
 		<div class="headerContent" id="headerContent">
-			<h1>German Gonzalez Moreno</h1>
-			<p>Awesome! lets do this!</p>
+			<h1 id="style">German Gonzalez Moreno</h1>
+			<p id="style">Awesome! lets do this!</p>
 		</div>
 	</figure>
 </header>
 <main>
 	<article>
-		<section id="Me">
-			<figure><img src=""></figure>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla delectus aliquam similique doloremque ut, odio placeat minima, magnam incidunt alias nihil accusamus itaque, laudantium error consectetur. Dicta voluptates possimus esse.</p>
-		</section>
-		<section id="AboutMe">
-			<h1>Hello everyone, below this amazin title will talk about me</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque facilis omnis deserunt consequuntur, odio qui, tenetur! Rerum molestiae, inventore cum fugit eaque nam cupiditate, enim, aperiam beatae numquam consequatur. Nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque earum veritatis id dolorem fuga iusto, odio, voluptatem ipsa esse magnam est vel possimus! Vitae saepe accusamus ratione voluptatem perspiciatis. Officia!</p>
-		</section>
-		<section id="Hobbies">
-			<h1>My Hobbies</h1>
-			<h3>My principal hobbies are</h3>
-			<figure>
-				<img src="">
-				<img src="">
-				<img src="">
-				<img src="">
-				<img src="">
-				<img src="">
-				<img src="">
-				<img src="">
-			</figure>
-		</section>
-		<section id="DayVideo">
-			<div>
-				<iframe class="center-block" width="720" height="480" src="https://www.youtube.com/embed/wBgp5aDH23g" volume=".5" frameborder="0" allowfullscreen></iframe>
+		<div class="container">
+			<section id="Me" class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="col-md-4">
+							<figure><img class=" img-rounded img-responsive center-block" src="images/ProfilePicture.jpg" alt=""></figure>
+						</div>
+						<div class="col-md-8" id="TextMe">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla delectus aliquam similique doloremque ut, odio placeat minima, magnam incidunt alias nihil accusamus itaque, laudantium error consectetur. Dicta voluptates possimus esse.</p>
+						</div>
+					</div>
+			</section>
+		</div>
+		<section id="AboutMe" class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<h1>About me</h1>
+						
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque facilis omnis deserunt consequuntur, odio qui, tenetur! Rerum molestiae, inventore cum fugit eaque nam cupiditate, enim, aperiam beatae numquam consequatur. Nemo. Lorem ipsum </p>
+			
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ipsa porro modi dicta fuga nulla, nesciunt eaque, exercitationem fugiat, earum quo dignissimos iusto esse. Distinctio iure tenetur corporis eum. Nesciunt!</p>
+
 			</div>
 		</section>
+		<section id="Hobbies" class="row">
+			<div class="col-md-10 col-md-offset-1">
+			<div class="">
+				<h1>My Hobbies</h1>
+				<p>My principal hobbies are</p>
+			</div>
+			<div class="col-md-3">
+				<h3>Music</h3>
+				<figure><img class="img-responsive center-block" src="images/music.png"></figure>
+			</div>
+			<div class="col-md-3">
+				<h3>Videogames</h3>
+				<figure><img class="img-responsive center-block" src="images/videogames.png"></figure>
+			</div>
+			<div class="col-md-3">
+				<h3>Learn new things</h3>
+				<figure><img class="img-responsive center-block" src="images/learn.png"></figure>
+			</div>
+			<div class="col-md-3">
+				<h3>Anime</h3>
+				<figure><img class="img-responsive center-block" src="images/anime.png"></figure>
+			</div>
+		</div>
+		<div class="col-md-10 col-md-offset-1">
+			<div class="col-md-3">
+				<h3>Stories</h3>
+				<figure><img class="img-responsive center-block" src="images/stories.png"></figure>
+			</div>
+			<div class="col-md-3">
+				<h3>Netflix</h3>
+				<figure><img class="img-responsive center-block" src="images/netflix.png"></figure>
+			</div>
+			<div class="col-md-3">
+				<h3>Sleep</h3>
+				<figure><img class="img-responsive center-block" src="images/sleep.png"></figure>
+			</div>
+			<div class="col-md-3">
+				<h3>Girlfriend</h3>
+				<figure><img class="img-responsive center-block" src="images/love.png"></figure>
+			</div>
+		</div>
+		</section>
+		
+		<section id="DayPlaylist" class="row">
+			<div class="col-md-10 col-md-offset-1">
+			<div class="col-md-12">
+				<h1 class="center-block">Day Playlist</h1>
+			</div>
+			<div id="resp" class="col-md-12">
+				<iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aspotify_latino%3Aplaylist%3A7fnRRDNxAhZXuIbxlMM6BI" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+			</div>
+		</div>
+		</section>
+
 	</article>
 </main>
-<footer>
-	<figure>
-		<img src="">
-		<img src="">
-		<img src="">
-	</figure>
+<footer id="Contact">
+	<h1>Contact</h1>
+		<div>	
+			<div>
+				<a href="https://www.facebook.com/Galuz.Gonzalez"><img src="images/fb.png"></a>
+			</div>
+			<div>
+				<a href="https://www.linkedin.com/in/german-gonzalez-moreno-a2a0b4106"><img src="images/linkedin.png"></a>
+			</div>
+			<div>
+				<a href="https://twitter.com/GaluzG"><img src="images/twitter.png"></a>
+			</div>
+		</div>
 </footer>
-
-	
 </body>
 </html>
