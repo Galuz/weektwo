@@ -9,10 +9,8 @@ h1{
   font-family: 'Yanone Kaffeesatz', sans-serif !important;
   font-size: 45px !important;
 }
+
 /*Nav bar*/
-nav{
-  background-color: #000;
-}
 /*Header*/
 .ftop{
   height: 609px;
@@ -66,7 +64,16 @@ main article h1{
   padding-top: 65px;
 }
 /*Hobbies*/
-
+main article section#Hobbies div figure img{
+  max-width: 150px;
+}
+main article section#Hobbies div figure{
+ 
+}
+#sleep{
+  width: 128px;
+  height: 128px;
+}
 /*Day video*/
 main article section#DayPlaylist div iframe{
   width: 100%;
