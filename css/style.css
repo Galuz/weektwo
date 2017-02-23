@@ -45,7 +45,7 @@ main{
 	position: relative;
 }
 main article section#Me {
-  margin-top: 70px;
+  padding-top: 58px;
 }
 
 main article section div#TextMe p{
